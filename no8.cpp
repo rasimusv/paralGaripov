@@ -35,7 +35,7 @@ int main() {
     printf("Regular = %f\n", omp_get_wtime() - start);
     start = omp_get_wtime();
 
-#pragma omp parallel for schedule(static, 5) num_threads(8)
+#pragma omp parallel for collapse (2) //schedule(static, 5) num_threads(8)
     for (int i = 0; i < N; i++) {
         float temp = 0;
         for (int j = 0; j < N; j++)

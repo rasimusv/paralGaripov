@@ -12,5 +12,5 @@ endif ()
 
 find_package(OpenMP REQUIRED)
 
-add_executable(untitled no5.cpp)
+add_executable(untitled no11.cpp)
 target_link_libraries(untitled PRIVATE OpenMP::OpenMP_CXX)
